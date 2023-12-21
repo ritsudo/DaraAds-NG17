@@ -1,5 +1,7 @@
 # DaraadsNg17
 
+*Порт UI DaraAds на Angular 17. Дизайн HTML+CSS: bogdana-badyanova-dev. Код Angular: ritsudo*
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
 ## Development server
