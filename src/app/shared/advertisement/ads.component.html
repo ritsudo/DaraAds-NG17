@@ -1,0 +1,49 @@
+<div class="container">
+    <a
+      [routerLink]="[
+        '/advertisements/',
+        categoryId,
+        'advertisement',
+        id
+      ]"
+    >
+      <figure class="container__image">
+        <img src="assets/images/advertisement/car.png" alt="" />
+      </figure>
+    </a>
+    <div class="container__content">
+      <a
+        [routerLink]="[
+          '/advertisements/',
+          categoryId,
+          'advertisement',
+          id
+        ]"
+      >
+        <h3 class="container__title">{{ title }}</h3>
+      </a>
+      <span class="container__price">{{ price }} руб.</span>
+      <div class="container__userInfo userInfo">
+        <a [routerLink]="['/profile/', owner]">
+          <figure class="userInfo__avatar">
+            <img alt="" />
+          </figure>
+        </a>
+        <div class="userInfo__left">
+          <a [routerLink]="['/profile/', owner]" class="userInfo__name">{{
+            owner
+          }}</a>
+          <a class="userInfo__link" [routerLink]="['/profile/', owner]"
+            >Другие объявления</a
+          >
+        </div>
+      </div>
+      <div class="container__advInfo">
+        <div class="container__adress"></div>
+        <span class="container__date">{{
+          createdDate
+        }}</span>
+      </div>
+    </div>
+  </div>
+  
